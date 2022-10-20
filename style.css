@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+}
+
+.product-title,
+.sale-price {
+  font-family: "Fraunces", serif;
+}
+.container {
+  margin: 20px;
+  height: 65vh;
+  width: 650px;
+  background-color: #fff;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: -1px -1px 8px 0px rgba(8, 7, 7, 0.11);
+  -webkit-box-shadow: -1px -1px 8px 0px rgba(8, 7, 7, 0.11);
+  -moz-box-shadow: -1px -1px 8px 0px rgba(8, 7, 7, 0.11);
+}
+
+.prod-img {
+  max-width: 100%;
+  display: inherit;
+}
+
+.card-content {
+  padding: 20px 35px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.product-class {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 12px;
+  margin-top: 3px;
+  font-weight: 500;
+}
+
+.product-title {
+  color: hsl(212, 21%, 14%);
+  font-weight: 700;
+  font-size: 35px;
+  padding-right: 30px;
+  line-height: 1;
+}
+
+p {
+  font-size: 14px;
+  padding-right: 30px;
+  line-height: 1.7;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.sale-price {
+  color: hsl(158, 36%, 37%);
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  font-size: 13px;
+}
+
+a:link,
+a:visited {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: hsl(158, 36%, 37%);
+  font-size: 13px;
+  padding: 15px;
+  border-radius: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+a:hover,
+a:active {
+  background-color: hsl(158, 69%, 14%);
+}
+
+@media screen and (max-width: 673px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 560px;
+    width: 320px;
+    padding-bottom: 80px;
+  }
+
+  img {
+    max-height: 50%;
+    object-fit: cover;
+  }
+
+  .card-content {
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 100%;
+    max-height: 100%;
+    gap: 10px;
+    padding: 0;
+    padding-left: 20px;
+    /* overflow: hidden; */
+  }
+
+  .product-class {
+    margin-top: 20px;
+  }
+
+  .product-title {
+    font-size: 28px;
+    line-height: 1.1;
+  }
+
+  .product-title + p {
+    font-size: 13px;
+    padding-right: 20px;
+    font-weight: 500;
+  }
+
+  .sale-price {
+    font-size: 30px;
+  }
+
+  .testtest {
+    max-height: 93%;
+  }
+
+  a:link,
+  a:visited {
+    padding: 15px;
+    margin-right: 20px;
+    font-size: 14px;
+  }
+}
