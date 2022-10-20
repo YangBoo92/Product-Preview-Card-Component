@@ -9,6 +9,13 @@ font-family: 'Montserrat', sans-serif; */
   margin: 0;
 }
 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  top: 85%;
+}
+
 body {
   background-color: hsl(30, 38%, 92%);
   display: grid;
@@ -16,6 +23,7 @@ body {
   height: 100vh;
   font-family: "Montserrat", sans-serif;
   color: hsl(228, 12%, 48%);
+  position: relative;
 }
 
 .product-title,
@@ -86,8 +94,8 @@ p {
   font-size: 13px;
 }
 
-a:link,
-a:visited {
+.add-to-cart:link,
+.add-to-cart:visited {
   display: flex;
   justify-content: center;
   gap: 15px;
@@ -102,8 +110,8 @@ a:visited {
   cursor: pointer;
 }
 
-a:hover,
-a:active {
+.add-to-cart,
+.add-to-cart {
   background-color: hsl(158, 69%, 14%);
 }
 
@@ -155,10 +163,17 @@ a:active {
     max-height: 93%;
   }
 
-  a:link,
-  a:visited {
+  .add-to-cart:link,
+  .add-to-cart:visited {
     padding: 15px;
     margin-right: 20px;
     font-size: 14px;
+  }
+
+  .attribution {
+    font-size: 8px;
+    text-align: center;
+    position: absolute;
+    top: 90%;
   }
 }
